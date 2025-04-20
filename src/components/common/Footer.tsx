@@ -12,7 +12,7 @@ export const Footer = ({ length }: { length: number }) => {
 
         <Button
           onClick={resetGame}
-          className='bg-[#f7df1e] text-black hover:scale-105 transition'
+          className='bg-[#f7df1e] text-black custom-drop-shadow'
         >
           Resetear juego
         </Button>

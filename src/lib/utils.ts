@@ -1,4 +1,4 @@
-import { Question as QuestionType } from '@/types'
+import { Question as QuestionType } from '../tpyes'
 
 export const bgCorrectAnswer = (info: QuestionType, index: number) => {
   const { userSelectedAnswer, correctAnswer } = info

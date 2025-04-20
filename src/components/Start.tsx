@@ -12,7 +12,7 @@ export const Start = () => {
 
   return (
     <Button
-      className='bg-[#f7df1e] text-black hover:scale-105 transition-transform duration-200'
+      className='bg-[#f7df1e] text-black custom-drop-shadow'
       onClick={handleClick}
     >
       ¡Empezar!

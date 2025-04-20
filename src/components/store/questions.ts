@@ -13,7 +13,9 @@ interface State {
   resetGame: () => void
 }
 
-const API_URL = import.meta.env ?? 'http://localhost:5173'
+// const API_URL = import.meta.env ?? 'http://localhost:5173'
+const API_URL = 'http://localhost:5173'
+console.log('API_URL', API_URL)
 
 export const useQuestionsStore = create<State>()(
   persist(

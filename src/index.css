@@ -92,4 +92,12 @@ body {
     box-shadow: 1.4em 0 #ff5f56, 2.8em 0 #ffbd2e, 4.2em 0 #27c93f !important;
     opacity: 1 !important;
   }
+
+  .custom-drop-shadow {
+    transition: filter 0.3s ease-in;
+  }
+
+  .custom-drop-shadow:hover {
+    filter: drop-shadow(0 0 1.3em #f7df1e);
+  }
 }
