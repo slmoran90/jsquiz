@@ -11,6 +11,9 @@ importers:
       '@fontsource-variable/roboto':
         specifier: ^5.2.5
         version: 5.2.5
+      '@fontsource/poppins':
+        specifier: ^5.2.5
+        version: 5.2.5
       '@tailwindcss/vite':
         specifier: ^4.1.4
         version: 4.1.4(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2))
@@ -293,6 +296,9 @@ packages:
 
   '@fontsource-variable/roboto@5.2.5':
     resolution: {integrity: sha512-csqBSOWXv0h5IbPhEqYJua6/nxl7dSNZbBOMeXSO9aqzgPw3GpfgC9kL5M6ULFLRaoDoBD4U9QctoDLKMaTyMg==}
+
+  '@fontsource/poppins@5.2.5':
+    resolution: {integrity: sha512-1S3k45pZOz2jqGPPqKw0in3uxFwnB+d5jSU8Tp9YwH/dIJptE3jdkQbYN0QD861GtuOpn6QhPW/yKt1w7hVRBQ==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -2358,6 +2364,8 @@ snapshots:
       levn: 0.4.1
 
   '@fontsource-variable/roboto@5.2.5': {}
+
+  '@fontsource/poppins@5.2.5': {}
 
   '@humanfs/core@0.19.1': {}
 
