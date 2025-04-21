@@ -4,7 +4,7 @@ export const Stats = () => {
   const { correctAnswers, incorrectAnswers, unanswered } = useFilterAnswers()
 
   return (
-    <div className='stats shadow'>
+    <div className='stats shadow text-white'>
       <div className='stat place-items-center'>
         <div className='stat-title text-emerald-500'>Correctas</div>
         <div className='stat-value text-emerald-500'>{correctAnswers}</div>

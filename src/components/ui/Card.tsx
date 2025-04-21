@@ -3,6 +3,7 @@ import { type Question as QuestionType } from '@/tpyes'
 import { bgCorrectAnswer } from '@/lib/utils'
 import { List, ListItem } from '@/components/ui/List'
 import { CodeSyntaxHighlighter } from '@/components/CodeSyntaxHighlighter'
+import { MagicCard } from '@/components/magicui/magic-card'
 
 export const Card = ({ info }: { info: QuestionType }) => {
   const { selectAnswer } = useQuestionsStore()
@@ -13,34 +14,36 @@ export const Card = ({ info }: { info: QuestionType }) => {
   }
 
   return (
-    <div className='card bg-neutral-800/50 max-w-full shadow-sm'>
-      <div className='card-body p-0'>
-        <h2 className='card-title justify-center'>
-          ¿Cuál es el resultado de la siguiente expresión?
-        </h2>
-        <CodeSyntaxHighlighter code={code} />
+    <div className='card bg-neutral-800/50 max-w-full shadow-sm !p-0'>
+      <MagicCard className='p-4'>
+        <div className='card-body p-0 text-white'>
+          <h2 className='card-title justify-center'>
+            ¿Cuál es el resultado de la siguiente expresión?
+          </h2>
+          <CodeSyntaxHighlighter code={code} />
 
-        <List>
-          {answers.map((option, index) => (
-            <ListItem
-              key={index}
-              className={`${bgCorrectAnswer(info, index)}`}
-            >
-              <button
-                onClick={handleSelectAnswer(index)}
-                disabled={userSelectedAnswer != null}
-                className={`${
-                  userSelectedAnswer != null
-                    ? 'cursor-not-allowed'
-                    : 'cursor-pointer'
-                }`}
+          <List>
+            {answers.map((option, index) => (
+              <ListItem
+                key={index}
+                className={`${bgCorrectAnswer(info, index)}`}
               >
-                {option}
-              </button>
-            </ListItem>
-          ))}
-        </List>
-      </div>
+                <button
+                  onClick={handleSelectAnswer(index)}
+                  disabled={userSelectedAnswer != null}
+                  className={`${
+                    userSelectedAnswer != null
+                      ? 'cursor-not-allowed'
+                      : 'cursor-pointer'
+                  }`}
+                >
+                  {option}
+                </button>
+              </ListItem>
+            ))}
+          </List>
+        </div>
+      </MagicCard>
     </div>
   )
 }

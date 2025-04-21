@@ -12,7 +12,7 @@ export const Start = () => {
 
   return (
     <Button
-      className='bg-[#f7df1e] text-black custom-drop-shadow'
+      className='bg-[#f7df1e] text-black border-[#f7df1e]'
       onClick={handleClick}
     >
       ¡Empezar!

@@ -1,3 +1,5 @@
+import { clsx, type ClassValue } from 'clsx'
+import { twMerge } from 'tailwind-merge'
 import { Question as QuestionType } from '../tpyes'
 
 export const bgCorrectAnswer = (info: QuestionType, index: number) => {
@@ -18,4 +20,8 @@ export const bgCorrectAnswer = (info: QuestionType, index: number) => {
 
   // If none of the above conditions are met, return transparent
   return 'transparent'
+}
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
 }

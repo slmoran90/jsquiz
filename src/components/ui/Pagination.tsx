@@ -7,7 +7,7 @@ export const Pagination = ({ index }: { index: number }) => {
     useQuestionsStore()
 
   return (
-    <div className='flex items-center gap-2 grow justify-center'>
+    <div className='flex items-center gap-2 grow justify-center text-white'>
       <Button
         onClick={goToPreviousQuestion}
         disabled={index === 0}

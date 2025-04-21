@@ -12,7 +12,7 @@ export const Footer = ({ length }: { length: number }) => {
 
         <Button
           onClick={resetGame}
-          className='bg-[#f7df1e] text-black custom-drop-shadow'
+          className='bg-[#f7df1e] text-black border-[#f7df1e]'
         >
           Resetear juego
         </Button>
@@ -23,7 +23,7 @@ export const Footer = ({ length }: { length: number }) => {
   return (
     <footer className='w-full flex flex-col gap-4 items-center'>
       {length > 0 && <Score />}
-      <p className='text-center text-lg mt-8'>
+      <p className='text-center text-lg text-white'>
         Made with <span className='animate-bounce inline-block'>❤️</span> by{' '}
         <a
           href='https://sergiomoran.dev'
